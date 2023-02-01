@@ -1,0 +1,6 @@
+@import 'variables';
+
+@mixin border($bgColor, $radius){
+    background-color: $bgColor;
+    border-radius: $radius;
+}

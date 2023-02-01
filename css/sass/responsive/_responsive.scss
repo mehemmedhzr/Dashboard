@@ -1,0 +1,332 @@
+// =========BREAKPOINTS===========
+
+@media screen and (max-width:1800px){
+    .grid-container{
+        .main-middle-right{
+            max-width: 1000px;
+        }
+    }
+}
+
+@media screen and (min-width:1700px) {
+    .vacancy-stats{
+        // min-width: 1000px;
+    }
+}
+
+@media screen and (max-width:1700px) {
+    #chart{
+        // max-width: 700px;
+        height: 400 !important;
+    }
+    .grid-container{
+        .main-middle-right{
+            max-width: 800px;
+        }
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .grid-container{
+        grid-template-columns: 18% 82%;
+    }
+
+}
+
+@media screen and (max-width:1600px) {
+    .grid-container{
+        grid-template-columns: 20% 80%;
+    }
+    .main-middle-right{
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .nav-right{
+        form{
+            margin-left: 24px;
+            .nav-search{
+                min-width: 400px;
+            }
+            .nav-search-active{
+                min-width: auto;
+            }
+        }
+    }
+    main{
+        padding: 0 0 0 32px;
+    }
+    .aside-top{
+        a{
+            img{
+                width: 140px;
+            }
+        }
+    }
+    .featured-card-item{
+        max-width: 250px;
+    }
+    #chart{
+        // max-width: 650px;
+        height: 350 !important;
+    }
+    .main-middle-right{
+        max-width: 800px;
+    }
+    .grid-container{
+        .main-middle-right{
+            max-width: 700px;
+        }
+        .profile-user {
+            margin-left: 0px;
+            margin-right: 8px;
+        }
+        .featured-cards {
+            padding: 0px; 
+        }
+        .hp-main > nav {
+            padding: 0px;
+        }
+        .vacancy-stats {
+            margin-right: 0px;
+        }
+    }
+    .hp-main{
+        nav{
+            padding-right: 32px !important;
+        }
+    }
+    .featured-cards{
+        padding-right: 32px !important;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .grid-container{
+        .main-middle-right{
+            max-width: 600px;
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .nav-right{
+        form{
+            .nav-search{
+                min-width: auto;
+                margin-right: 24px;
+            }
+        }
+    }
+    #chart{
+        // max-width: 600px;
+        height: 300 !important;
+    }
+    .profile-user{
+        max-width: 220px;
+    }
+    .main-middle-right{
+        max-width: 700px;
+    }
+}
+
+@media screen and (min-width:992px){
+    .profile-user{
+        margin-left: 48px;
+    }
+    .vacancy-stats{
+        margin-right: 48px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .nav-profile{
+        span{
+            display: none;
+        }
+        img{
+            margin-right: 0;
+        }
+    }
+    .hp-main{
+        >nav{
+            flex-wrap: wrap;
+            min-height: 120px;
+            padding: 0px 0px;
+
+        }
+    }
+    .nav-right, .sidebar-btn {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .nav-right form{
+        margin-left: 0px;
+    }
+    .featured-card-item{
+        flex-wrap: wrap;
+        max-width: initial;
+        flex: 0 0 auto;
+        width: 49%;
+    }
+    .hp-main-middle{
+        flex-direction: column;
+    }
+    .profile-user{
+        width: 100%;
+        margin-bottom: 48px;
+        max-width: 100%;
+    }
+    #chart{
+        max-width: 100%;
+        width: 100%;
+        height: auto !important;
+        min-width: 263px !important;
+        min-height: 131px !important;
+    }
+    .vacancy-stats-bottom {
+        flex-wrap: wrap;
+    }
+    .vacancy-stats-top{
+        gap: 16px;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .main-middle-right{
+        max-width: 100%;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .over-md-invisible{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    aside.active{
+        position: fixed;
+        z-index: 999;
+        border-radius: 0 55px 0 0;
+        padding: 28px 0 16px 24px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow-y: auto;
+    }
+    body{
+        background-color: white !important;
+    }
+    .hp-main{
+        nav{
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    }
+    .grid-container{
+        display: inherit !important;
+        height: auto !important;
+    }
+    .active-sidebar {
+        border-radius: 55px;
+        margin-right: 0;
+    }
+    .fixed-sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        opacity: .5;
+        z-index: 10;
+    }
+    .close-btn{
+        display: inline;
+    }
+    .below-md-invisible{
+        display: none !important;
+    }
+    .sidebar-btn{
+        margin-bottom: 8px;
+    }
+    .notification-box, .message-box{
+        width: 48px;
+        margin-right: 0;
+    }
+    .nav-right {
+        form{
+            padding: 0 16 0 16;
+            margin-right: 0;
+            input{
+                margin-right: 8px;
+            }
+        }
+    }
+    .sidebar-btn button {
+        margin-right: 8px;
+    }
+    .featured-card-item{
+        flex-wrap: wrap;
+        max-width: initial;
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .jobs-carousel-item{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:576px){
+    .vacancy-stats{
+        padding-bottom: 8px !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .notification-box, .message-box{
+        display: none;
+    }
+    .nav-right {
+        form{
+            width: 100%;
+            svg{
+                min-width: 20px;
+            }
+        }
+    }
+    .nav-profile img {
+        width: 48px;
+    }
+    .vacancy-stats-bottom {
+        gap: 4px !important;
+    }
+}
+
+@media screen and (max-width:430px){
+    .vacancy-stats{
+        padding: 0;
+    }
+    .vacancy-stats-top{
+        padding:24 16 0 16;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .nav-search{
+        width: 150;
+    }
+    .sidebar-btn span{
+        margin-right: 8px;
+    }
+}

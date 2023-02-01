@@ -1,0 +1,689 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+
+    <div class="my-container">
+        <aside class="translate-sidebar">
+            <div class="aside-top d-flex justify-content-between align-items-center">
+                <a href="dashboard.html">
+                    <img src="img/logo-jobie.svg" alt="">
+                </a>
+                <span class="material-symbols-outlined close-btn">
+                    close
+                </span>
+            </div>
+            <div class="sidebar d-flex flex-column">
+                <div class="sidebar-item active-sidebar">
+                   <a href="#" class="dashboard-link">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.2753 11.9611L16.3242 4.00585C15.6836 3.43661 14.8564 3.12219 13.9994 3.12219C13.1424 3.12219 12.3152 3.43661 11.6746 4.00585L2.72459 11.9611C2.54823 12.1185 2.4238 12.3258 2.36776 12.5555C2.31172 12.7851 2.3267 13.0264 2.41073 13.2473C2.49476 13.4683 2.64388 13.6586 2.83837 13.793C3.03286 13.9273 3.26356 13.9995 3.49996 14H5.83329V22.1667C5.83431 23.0946 6.20339 23.9842 6.85954 24.6404C7.5157 25.2966 8.40535 25.6656 9.33329 25.6667H10.5V18.6667C10.5 14.042 17.5 14.0399 17.5 18.6667V25.6667H18.6666C19.5946 25.6656 20.4842 25.2966 21.1404 24.6404C21.7965 23.9842 22.1656 23.0946 22.1666 22.1667V14H24.5C24.7364 13.9995 24.9671 13.9273 25.1615 13.793C25.356 13.6586 25.5052 13.4683 25.5892 13.2473C25.6732 13.0264 25.6882 12.7851 25.6322 12.5555C25.5761 12.3258 25.4517 12.1185 25.2753 11.9611Z" fill="#BFBFBF"/>
+                    </svg>
+                    <span>Dashboard</span>
+                   </a>
+                </div>
+                <div class="sidebar-item">
+                   <a href="#" class="search-job-link">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1_522)">
+                        <path d="M15.7545 24.4961C8.99147 24.4961 3.50891 19.0136 3.50891 12.2506C3.50891 5.4875 8.99141 0.00506592 15.7545 0.00506592C22.5175 0.00506592 28 5.48756 28 12.2506C28 19.0137 22.5175 24.4961 15.7545 24.4961ZM15.7545 3.50381C10.9237 3.50381 7.00766 7.41987 7.00766 12.2506C7.00766 17.0814 10.9237 20.9974 15.7545 20.9974C20.5852 20.9974 24.5013 17.0814 24.5013 12.2506C24.5013 7.41987 20.5852 3.50381 15.7545 3.50381Z" fill="#BFBFBF"/>
+                        <path d="M1.75951 27.9948C1.29451 27.9976 0.847591 27.815 0.517469 27.4875C-0.168521 26.8071 -0.173043 25.6995 0.50734 25.0136C0.510716 25.0102 0.514093 25.0068 0.517469 25.0034L7.09506 18.4258C7.80517 17.7398 8.93693 17.7594 9.62292 18.4696C10.3089 19.1797 10.2893 20.3114 9.57921 20.9974L3.00155 27.4875C2.67143 27.815 2.22452 27.9976 1.75951 27.9948Z" fill="#BFBFBF"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_1_522">
+                        <rect width="28" height="28" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    <span>Search Job</span>
+                   </a>
+                </div>
+                <div class="sidebar-item sidebar-item-app">
+                    <a href="#">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_530)">
+                            <path d="M23.7948 12.6045C23.3022 12.6045 22.8395 12.6866 22.4067 12.8582V5.58955H15.153C15.3097 5.15672 15.3918 4.6791 15.3918 4.18657C15.3918 1.87313 13.5186 0 11.2052 0C8.89177 0 7.01863 1.87313 7.01863 4.18657C7.01863 4.6791 7.10072 5.14925 7.25744 5.58955H0.0111694V13.7015C0.749975 13.0299 1.73505 12.6119 2.80968 12.6119C5.12311 12.6119 6.99624 14.4851 6.99624 16.7985C6.99624 19.1119 5.12311 20.9851 2.80968 20.9851C1.73505 20.9851 0.749975 20.5672 0.0111694 19.8955V28H22.4142V20.7313C22.847 20.8955 23.3097 20.9851 23.8022 20.9851C26.1231 20.9851 27.9888 19.1119 27.9888 16.7985C27.9888 14.4851 26.1231 12.6045 23.7948 12.6045Z" fill="#BFBFBF"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_530">
+                            <rect width="28" height="28" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        <span>Applications</span>
+                    </a>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_549)">
+                            <path d="M22.5678 26.5202C22.8079 26.5202 23.0448 26.6115 23.225 26.7856C24.3769 27.8979 26.0573 28.2683 27.551 27.8047C26.5897 25.802 26.4565 23.5075 27.2015 21.383C28.126 18.7398 28.3577 16.0905 27.3055 13.4334C26.3811 11.0992 24.5972 9.15994 22.3395 8.05408C22.4784 8.79455 22.5484 9.54903 22.5484 10.3115C22.5485 13.5478 21.304 16.5916 19.0444 18.8823C16.7846 21.1733 13.7554 22.4615 10.5148 22.5097C9.9127 22.5191 9.31334 22.4837 8.72076 22.4056C10.5017 25.5274 13.8606 27.5606 17.5516 27.6153C19.1663 27.6403 20.7166 27.302 22.1604 26.6125C22.2904 26.5503 22.4297 26.5202 22.5678 26.5202Z" fill="#BFBFBF"/>
+                            <path d="M10.541 0.00236249C4.79225 -0.111786 0.0134653 4.53885 -0.000396074 10.2863C-0.00379211 11.6906 0.270317 13.052 0.814376 14.3331C0.822277 14.3517 0.829624 14.3706 0.836277 14.3897C1.58126 16.5142 1.44812 18.8086 0.486693 20.8114C1.9806 21.2748 3.66074 20.9046 4.81276 19.7922C5.09657 19.518 5.52122 19.449 5.87732 19.6192C7.32091 20.3087 8.87144 20.648 10.486 20.6221C16.1898 20.5374 20.6576 16.0085 20.6576 10.3117C20.6576 4.73921 16.1193 0.114501 10.541 0.00236249ZM4.819 11.8517C3.99307 11.8517 3.32349 11.1832 3.32349 10.3587C3.32349 9.53414 3.99307 8.86568 4.819 8.86568C5.64493 8.86568 6.3145 9.53414 6.3145 10.3587C6.31444 11.1832 5.64493 11.8517 4.819 11.8517ZM10.3286 11.8517C9.50269 11.8517 8.83312 11.1832 8.83312 10.3587C8.83312 9.53414 9.50269 8.86568 10.3286 8.86568C11.1546 8.86568 11.8241 9.53414 11.8241 10.3587C11.8241 11.1832 11.1546 11.8517 10.3286 11.8517ZM15.8383 11.8517C15.0124 11.8517 14.3428 11.1832 14.3428 10.3587C14.3428 9.53414 15.0124 8.86568 15.8383 8.86568C16.6642 8.86568 17.3338 9.53414 17.3338 10.3587C17.3338 11.1832 16.6642 11.8517 15.8383 11.8517Z" fill="#BFBFBF"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_549">
+                            <rect width="28" height="28" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span>Message</span>
+                    </a>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.8334 4.66663C7.00004 4.66663 2.33337 9.33329 2.33337 15.1666C2.33337 21 7.00004 25.6666 12.8334 25.6666C18.6667 25.6666 23.3334 21 23.3334 15.1666H12.8334V4.66663Z" fill="#BFBFBF"/>
+                            <path d="M15.1667 2.33331V12.8333H25.6667C25.6667 6.99998 21 2.33331 15.1667 2.33331Z" fill="#BFBFBF"/>
+                        </svg>
+                        <span>Statistics</span>
+                    </a>
+                </div>
+                <div class="sidebar-item">
+                    <a href="#">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_544)">
+                            <path d="M19.621 4.51614H3.54242C2.95871 4.51614 2.48395 4.9909 2.48395 5.57461V26.9415C2.48395 27.5253 2.95871 28 3.54242 28H19.621C20.2041 28 20.6789 27.5253 20.6789 26.9415V5.57461C20.6789 4.9909 20.2041 4.51614 19.621 4.51614ZM16.0323 19.4194H7.45169C6.95266 19.4194 6.54846 19.0152 6.54846 18.5161C6.54846 18.0171 6.95266 17.6129 7.45169 17.6129H16.0323C16.5314 17.6129 16.9356 18.0171 16.9356 18.5161C16.9356 19.0152 16.5314 19.4194 16.0323 19.4194ZM16.0323 15.8065H7.45169C6.95266 15.8065 6.54846 15.4023 6.54846 14.9032C6.54846 14.4042 6.95266 14 7.45169 14H16.0323C16.5314 14 16.9356 14.4042 16.9356 14.9032C16.9356 15.4023 16.5314 15.8065 16.0323 15.8065ZM16.0323 12.1936H7.45169C6.95266 12.1936 6.54846 11.7894 6.54846 11.2903C6.54846 10.7913 6.95266 10.3871 7.45169 10.3871H16.0323C16.5314 10.3871 16.9356 10.7913 16.9356 11.2903C16.9356 11.7894 16.5314 12.1936 16.0323 12.1936Z" fill="#BFBFBF"/>
+                            <path d="M25.5161 2.70968V22.5806C25.5161 23.9445 24.4187 25.2903 22.4853 25.2903V5.5746C22.4853 3.99452 21.2004 2.70968 19.6209 2.70968H5.51477C5.51477 1.2154 6.80243 0 8.38477 0H22.6461C24.2285 0 25.5161 1.2154 25.5161 2.70968Z" fill="#BFBFBF"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_544">
+                            <rect width="28" height="28" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span>News</span>
+                    </a>
+                </div>
+            </div>
+            <article>
+                <p class="mb-0">Jobie Job Portal Admin Dashboard</p>
+                <p>© 2020 All Rights Reserved</p>
+                <p>Made with <span class="material-symbols-outlined">favorite</span> by Peterdraw</p>
+            </article>
+        </aside>
+    
+        
+        <main class="hp-main dashboard-page">
+            <nav class="d-flex justify-content-between align-items-center">
+                <div class="sidebar-btn d-flex align-items-center">
+                    <button type="button" class="sidebar-toggle">
+                        <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="toggleBtn">
+                            <path d="M22.5 18H1.50001C0.671548 18 0 17.3284 0 16.5C0 15.6716 0.671548 15 1.50001 15H22.5C23.3285 15 24.0001 15.6716 24.0001 16.5C24 17.3284 23.3285 18 22.5 18Z" fill="black"/>
+                            <path d="M27.5 10.5H6.50001C5.67155 10.5 5 9.82848 5 9.00007C5 8.17166 5.67155 7.50006 6.50001 7.50006H27.5C28.3285 7.50006 29.0001 8.17161 29.0001 9.00007C29.0001 9.82853 28.3285 10.5 27.5 10.5Z" fill="black"/>
+                            <path d="M22.5 3.00002H1.50001C0.671548 3.00002 0 2.32847 0 1.50001C0 0.671548 0.671548 0 1.50001 0H22.5C23.3285 0 24.0001 0.671548 24.0001 1.50001C24.0001 2.32847 23.3285 3.00002 22.5 3.00002Z" fill="black"/>
+                        </svg>
+                        <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="toggleBtn-active">
+                            <path d="M22.5 18H1.50001C0.671548 18 0 17.3284 0 16.5C0 15.6716 0.671548 15 1.50001 15H22.5C23.3285 15 24.0001 15.6716 24.0001 16.5C24 17.3284 23.3285 18 22.5 18Z" fill="black"/>
+                            <path d="M27.5 10.5H6.50001C5.67155 10.5 5 9.82848 5 9.00007C5 8.17166 5.67155 7.50006 6.50001 7.50006H27.5C28.3285 7.50006 29.0001 8.17161 29.0001 9.00007C29.0001 9.82853 28.3285 10.5 27.5 10.5Z" fill="black"/>
+                            <path d="M22.5 3.00002H1.50001C0.671548 3.00002 0 2.32847 0 1.50001C0 0.671548 0.671548 0 1.50001 0H22.5C23.3285 0 24.0001 0.671548 24.0001 1.50001C24.0001 2.32847 23.3285 3.00002 22.5 3.00002Z" fill="black"/>
+                        </svg>
+                    </button>
+                    <span>Dashboard</span>
+                    <div class="nav-profile d-flex align-items-center over-md-invisible">
+                        <img src="img/profilePictureNav.png" alt="">
+                        <span>
+                            <p class="mb-1">Oda Dink</p>
+                            <p class="mb-0">Super Admin</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="nav-right d-flex align-items-center">
+                    <form action="" class="d-flex align-items-center justify-content-between mb-0">
+                        <input type="search" class="nav-search " placeholder="Search something here...">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_491)">
+                            <path d="M15.7544 24.4961C8.9914 24.4961 3.50885 19.0136 3.50885 12.2506C3.50885 5.4875 8.99134 0.00506592 15.7544 0.00506592C22.5175 0.00506592 28 5.48756 28 12.2506C28 19.0137 22.5174 24.4961 15.7544 24.4961ZM15.7544 3.50381C10.9237 3.50381 7.0076 7.41987 7.0076 12.2506C7.0076 17.0814 10.9237 20.9974 15.7544 20.9974C20.5852 20.9974 24.5012 17.0814 24.5012 12.2506C24.5012 7.41987 20.5851 3.50381 15.7544 3.50381Z" fill="#BFBFBF"/>
+                            <path d="M1.75948 27.9948C1.29448 27.9976 0.847561 27.815 0.517439 27.4875C-0.168551 26.8071 -0.173073 25.6995 0.507309 25.0136C0.510686 25.0102 0.514062 25.0068 0.517439 25.0034L7.09503 18.4258C7.80514 17.7398 8.9369 17.7594 9.62289 18.4696C10.3089 19.1797 10.2893 20.3114 9.57918 20.9974L3.00152 27.4875C2.6714 27.815 2.22449 27.9976 1.75948 27.9948Z" fill="#BFBFBF"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_491">
+                            <rect width="28" height="28" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </form>
+                    <div class="message-box"><img src="./img/messageBox.svg" alt=""></div>
+                    <div class="notification-box"><img src="./img/notificationBox.svg" alt=""></div>
+                    <div class="nav-profile d-flex align-items-center below-md-invisible">
+                        <img src="img/profilePictureNav.png" alt="">
+                        <span>
+                            <p class="mb-1">Oda Dink</p>
+                            <p class="mb-0">Super Admin</p>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="featured-cards">
+                <div class="row featured-cards-inside d-flex justify-content-lg-between">
+                    <div class="featured-card-item bg-c-primary d-flex justify-content-between align-items-center">
+                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="68" height="68" rx="14.5" stroke="#DCD7E8"/>
+                            <path d="M46.25 21.75H44.5V18.25C44.5 17.7859 44.3156 17.3408 43.9874 17.0126C43.6593 16.6844 43.2141 16.5 42.75 16.5C42.2859 16.5 41.8407 16.6844 41.5126 17.0126C41.1844 17.3408 41 17.7859 41 18.25V21.75H27V18.25C27 17.7859 26.8156 17.3408 26.4874 17.0126C26.1592 16.6844 25.7141 16.5 25.25 16.5C24.7859 16.5 24.3408 16.6844 24.0126 17.0126C23.6844 17.3408 23.5 17.7859 23.5 18.25V21.75H21.75C20.3576 21.75 19.0223 22.3031 18.0377 23.2877C17.0531 24.2723 16.5 25.6076 16.5 27V28.75H51.5V27C51.5 25.6076 50.9469 24.2723 49.9623 23.2877C48.9777 22.3031 47.6424 21.75 46.25 21.75Z" fill="white"/>
+                            <path d="M16.5 46.25C16.5 47.6424 17.0531 48.9777 18.0377 49.9623C19.0223 50.9469 20.3576 51.5 21.75 51.5H46.25C47.6424 51.5 48.9777 50.9469 49.9623 49.9623C50.9469 48.9777 51.5 47.6424 51.5 46.25V32.25H16.5V46.25Z" fill="white"/>
+                        </svg>
+                        <article class="featured-card-item-text">
+                            <p class="text-end">Interviews Schedule</p>
+                            <h4 class="mb-0 text-end">86</h4>
+                        </article>
+                    </div>
+                    <div class="featured-card-item bg-c-lightblue d-flex justify-content-between align-items-center">
+                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="68" height="68" rx="14.5" stroke="#DCD7E8"/>
+                            <path d="M51.4998 23.4995H48.0002V51.4999H51.4998C53.4245 51.4999 55 49.9238 55 47.9992V26.9992C55 25.075 53.4245 23.4995 51.4998 23.4995Z" fill="white"/>
+                            <path d="M40.9998 23.4995V19.9998C40.9998 18.0751 39.4243 16.4996 37.5001 16.4996H30.4998C28.5756 16.4996 27.0001 18.0751 27.0001 19.9998V23.4995H23.5V51.4998H44.5V23.4995H40.9998ZM37.5001 23.4995H30.4998V19.9993H37.5001V23.4995Z" fill="white"/>
+                            <path d="M16.5002 23.4995C14.5755 23.4995 13 25.075 13 26.9997V47.9997C13 49.9243 14.5755 51.5004 16.5002 51.5004H19.9998V23.4995H16.5002Z" fill="white"/>
+                        </svg>
+                        <article class="featured-card-item-text">
+                            <p class="text-end">Application Sent</p>
+                            <h4 class="mb-0 text-end">75</h4>
+                        </article>
+                    </div>
+                    <div class="featured-card-item bg-c-success d-flex justify-content-between align-items-center">
+                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.499969" y="0.5" width="68" height="68" rx="14.5" stroke="#DCD7E8"/>
+                            <g clip-path="url(#clip0_1_471)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28.1811 35.0083C28.065 34.9063 27.7968 34.6695 27.7015 34.5799C25.3755 32.3941 23.8517 28.9712 23.8517 25.1138C23.8517 18.3781 28.4868 13.041 34.001 13.041C39.5152 13.041 44.1503 18.3781 44.1503 25.1138C44.1503 28.9679 42.6292 32.3884 40.3094 34.5778C40.2118 34.6699 39.9384 34.9116 39.8238 35.0125L39.8139 35.1799C39.8789 36.1847 40.554 37.0553 41.5232 37.3626C48.7277 39.641 53.9507 45.0853 54.8276 51.538C54.9483 52.3988 54.6902 53.2696 54.1198 53.9254C53.5495 54.5813 52.723 54.9579 51.8541 54.9579C45.4956 54.9591 22.5067 54.9591 16.1482 54.9591C15.2787 54.9591 14.4518 54.5824 13.8812 53.9263C13.3107 53.2701 13.0524 52.3989 13.1723 51.5437C14.0515 45.0851 19.2744 39.641 26.4777 37.3628C27.4504 37.0544 28.1263 36.1802 28.1885 35.1722L28.1811 35.0083Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_471">
+                            <rect width="42" height="42" fill="white" transform="translate(13 13)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <article class="featured-card-item-text">
+                            <p class="text-end">Profile Viewed</p>
+                            <h4 class="mb-0 text-end">45,673</h4>
+                        </article>
+                    </div>
+                    <div class="featured-card-item bg-c-warning d-flex justify-content-between align-items-center">
+                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="68" height="68" rx="14.5" stroke="#DCD7E8"/>
+                            <path d="M46.25 21.75H44.5V18.25C44.5 17.7859 44.3156 17.3408 43.9874 17.0126C43.6593 16.6844 43.2141 16.5 42.75 16.5C42.2859 16.5 41.8407 16.6844 41.5126 17.0126C41.1844 17.3408 41 17.7859 41 18.25V21.75H27V18.25C27 17.7859 26.8156 17.3408 26.4874 17.0126C26.1592 16.6844 25.7141 16.5 25.25 16.5C24.7859 16.5 24.3408 16.6844 24.0126 17.0126C23.6844 17.3408 23.5 17.7859 23.5 18.25V21.75H21.75C20.3576 21.75 19.0223 22.3031 18.0377 23.2877C17.0531 24.2723 16.5 25.6076 16.5 27V28.75H51.5V27C51.5 25.6076 50.9469 24.2723 49.9623 23.2877C48.9777 22.3031 47.6424 21.75 46.25 21.75Z" fill="white"/>
+                            <path d="M16.5 46.25C16.5 47.6424 17.0531 48.9777 18.0377 49.9623C19.0223 50.9469 20.3576 51.5 21.75 51.5H46.25C47.6424 51.5 48.9777 50.9469 49.9623 49.9623C50.9469 48.9777 51.5 47.6424 51.5 46.25V32.25H16.5V46.25Z" fill="white"/>
+                        </svg>
+                        <article class="featured-card-item-text">
+                            <p class="text-end">Unread Message</p>
+                            <h4 class="mb-0 text-end">93</h4>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="d-flex justify-content-between hp-main-middle">
+                <section class="profile-user">
+                    <div class="user-profile-path d-flex flex-column align-items-center">
+                        <img src="./img/user-profile-picture.png" alt="" class="mb-4">
+                        <h5 class="mb-1">Oda Dink</h5>
+                        <p class="mb-5">Programmer</p>
+                        <div class="language-stats d-flex justify-content-between">
+                            <div>
+                                <div class="willbefilled"></div>
+                                <p class="text-center">PHP</p>
+                            </div>
+                            <div>
+                                <div class="willbefilled"></div>
+                                <p class="text-center">Vue</p>
+                            </div>
+                            <div>
+                                <div class="willbefilled"></div>
+                                <p class="text-center">Laravel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-activities d-flex flex-column mt-4 mb-4">
+                        <div><h3 class="text-start mb-3">Recent Activities</h3></div>
+                        <div class="activity-notification d-flex align-items-start mb-3">
+                            <img src="./img/recent-activities-notification.png" alt="">
+                            <div>
+                                <p class="activity-notification-text mb-2">Your application has accepted in <span>3 Vacancy</span></p>
+                                <p class="activity-notification-date mb-0">12h ago</p>
+                            </div>
+                        </div>
+                        <div class="activity-notification d-flex align-items-start mb-3">
+                            <img src="./img/recent-activities-notification.png" alt="">
+                            <div>
+                                <p class="activity-notification-text mb-2">Your application has accepted in <span>3 Vacancy</span></p>
+                                <p class="activity-notification-date mb-0">12h ago</p>
+                            </div>
+                        </div>
+                        <div class="activity-notification d-flex align-items-start mb-3">
+                            <img src="./img/recent-activities-notification.png" alt="">
+                            <div>
+                                <p class="activity-notification-text mb-2">Your application has accepted in <span>3 Vacancy</span></p>
+                                <p class="activity-notification-date mb-0">12h ago</p>
+                            </div>
+                        </div>
+                        <div class="activity-notification d-flex align-items-start mb-0">
+                            <img src="./img/recent-activities-notification.png" alt="">
+                            <div>
+                                <p class="activity-notification-text mb-2">Your application has accepted in <span>3 Vacancy</span></p>
+                                <p class="activity-notification-date mb-0">12h ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-user-bottom">
+                        <button type="button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_396)">
+                                <path d="M13.0606 23.5607L18.3752 18.2461C18.6681 17.9532 18.8145 17.5693 18.8145 17.1854C18.8145 16.8015 18.6681 16.4176 18.3752 16.1247C17.7894 15.539 16.8396 15.539 16.2539 16.1247L13.4999 18.8787L13.4999 1.5C13.4999 0.671578 12.8284 3.34086e-07 11.9999 2.97875e-07C11.1715 2.61663e-07 10.4999 0.671578 10.4999 1.5L10.4999 18.8787L7.74604 16.1247C7.16024 15.539 6.21051 15.539 5.62471 16.1247C5.03891 16.7106 5.03891 17.6602 5.62471 18.2461L10.9393 23.5607C11.5251 24.1464 12.4748 24.1464 13.0606 23.5607Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_396">
+                                <rect width="24" height="24" fill="white" transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+                <section class="main-middle-right">
+                    <section class="vacancy-stats">
+                        <div class="vacancy-stats-top d-flex align-items-baseline justify-content-between flex-wrap flex-lg-nowrap">
+                            <span>Vacancy Stats</span>
+                            <div class="form-check form-switch form-switch-sm toggle-checkbox mb-0">
+                                <label class="form-check-label toggle-checkbox-text toggle-checkbox-text-chc" for="flexSwitchCheckDefault">Application Sent</label>
+                                <input class="form-check-input toggle-checkbox-item" type="checkbox" id="flexSwitchCheckDefault" checked>
+                            </div>
+                            <div class="form-check form-switch form-switch-sm toggle-checkbox mb-0">
+                                <label class="form-check-label toggle-checkbox-text toggle-checkbox-text-chc" for="flexSwitchCheckDefault">Interviews</label>
+                                <input class="form-check-input toggle-checkbox-item" type="checkbox" id="flexSwitchCheckDefault" checked>
+                            </div>
+                            <div class="form-check form-switch form-switch-sm toggle-checkbox mb-0">
+                                <label class="form-check-label toggle-checkbox-text" for="flexSwitchCheckDefault">Rejected</label>
+                                <input class="form-check-input toggle-checkbox-item" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                            <select class="form-select vacancy-custom-select mb-0" aria-label="Default select example">
+                                <option selected class="">This Month</option>
+                                <option value="1" class="">January</option>
+                                <option value="2" class="">February</option>
+                                <option value="3" class="">March</option>
+                            </select>
+                        </div>
+                        <div class="vacancy-chart">
+                            <canvas id="chart"></canvas>
+                        </div>
+                        <div class="vacancy-stats-bottom d-flex align-items-center justify-content-center gap-5">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="vacancy-bottom-circle bg-c-primary"></div>
+                                <span>Application Sent</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="vacancy-bottom-circle bg-c-success"></div>
+                                <span>Interviews</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="vacancy-bottom-circle bg-danger"></div>
+                                <span>Rejected</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="jobs-list">
+                        <h3>Recomended Jobs</h3>
+                        <div class="jobs-carousel owl-carousel owl-theme">
+                            <div class="jobs-carousel-item">
+                                <div class="jobs-item-top d-flex justify-content-between">
+                                    <div>
+                                        <p class="mb-2 jobs-team-name">Maximoz Team</p>
+                                        <p class="mb-3 job-position">Database Progammer</p>
+                                    </div>
+                                    <div><img src="./img/jobs-item-img.png" alt=""></div>
+                                </div>
+                                <p class="mb-4 job-salary">$14,000 - $25,000</p>
+                                <p class="job-statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                <div class="jobs-item-bottom d-flex justify-content-between align-items-center">
+                                    <div>REMOTE</div>
+                                    <span>London, England</span>
+                                </div>
+                            </div>
+                            <div class="jobs-carousel-item">
+                                <div class="jobs-item-top d-flex justify-content-between">
+                                    <div>
+                                        <p class="mb-2 jobs-team-name">Klean n Clin Studios</p>
+                                        <p class="mb-3 job-position">Senior Programmer</p>
+                                    </div>
+                                    <div><img src="./img/jobs-item-img.png" alt=""></div>
+                                </div>
+                                <p class="mb-4 job-salary">$14,000 - $25,000</p>
+                                <p class="job-statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                <div class="jobs-item-bottom d-flex justify-content-between align-items-center">
+                                    <div>PART TIME</div>
+                                    <span>Manchester, England</span>
+                                </div>
+                            </div>
+                            <div class="jobs-carousel-item">
+                                <div class="jobs-item-top d-flex justify-content-between">
+                                    <div>
+                                        <p class="mb-2 jobs-team-name">Maximoz Team</p>
+                                        <p class="mb-3 job-position">Intern UX Designer</p>
+                                    </div>
+                                    <div><img src="./img/jobs-item-img.png" alt=""></div>
+                                </div>
+                                <p class="mb-4 job-salary">$14,000 - $25,000</p>
+                                <p class="job-statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                <div class="jobs-item-bottom d-flex justify-content-between align-items-center">
+                                    <div>FULTIME</div>
+                                    <span>London, England</span>
+                                </div>
+                            </div>
+                            <div class="jobs-carousel-item">
+                                <div class="jobs-item-top d-flex justify-content-between">
+                                    <div>
+                                        <p class="mb-2 jobs-team-name">Maximoz Team</p>
+                                        <p class="mb-3 job-position">Database Progammer</p>
+                                    </div>
+                                    <div><img src="./img/jobs-item-img.png" alt=""></div>
+                                </div>
+                                <p class="mb-4 job-salary">$14,000 - $25,000</p>
+                                <p class="job-statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                <div class="jobs-item-bottom d-flex justify-content-between align-items-center">
+                                    <div>REMOTE</div>
+                                    <span>London, England</span>
+                                </div>
+                            </div>
+                            <div class="jobs-carousel-item">
+                                <div class="jobs-item-top d-flex justify-content-between">
+                                    <div>
+                                        <p class="mb-2 jobs-team-name">Klean n Clin Studios</p>
+                                        <p class="mb-3 job-position">Senior Programmer</p>
+                                    </div>
+                                    <div><img src="./img/jobs-item-img.png" alt=""></div>
+                                </div>
+                                <p class="mb-4 job-salary">$14,000 - $25,000</p>
+                                <p class="job-statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                <div class="jobs-item-bottom d-flex justify-content-between align-items-center">
+                                    <div>PART TIME</div>
+                                    <span>Manchester, England</span>
+                                </div>
+                            </div>
+                            <div class="jobs-carousel-item">
+                                <div class="jobs-item-top d-flex justify-content-between">
+                                    <div>
+                                        <p class="mb-2 jobs-team-name">Maximoz Team</p>
+                                        <p class="mb-3 job-position">Intern UX Designer</p>
+                                    </div>
+                                    <div><img src="./img/jobs-item-img.png" alt=""></div>
+                                </div>
+                                <p class="mb-4 job-salary">$14,000 - $25,000</p>
+                                <p class="job-statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                <div class="jobs-item-bottom d-flex justify-content-between align-items-center">
+                                    <div>FULTIME</div>
+                                    <span>London, England</span>
+                                </div>
+                            </div>
+                            <div class="jobs-carousel-item">
+                                <div class="jobs-item-top d-flex justify-content-between">
+                                    <div>
+                                        <p class="mb-2 jobs-team-name">Maximoz Team</p>
+                                        <p class="mb-3 job-position">Database Progammer</p>
+                                    </div>
+                                    <div><img src="./img/jobs-item-img.png" alt=""></div>
+                                </div>
+                                <p class="mb-4 job-salary">$14,000 - $25,000</p>
+                                <p class="job-statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                <div class="jobs-item-bottom d-flex justify-content-between align-items-center">
+                                    <div>REMOTE</div>
+                                    <span>London, England</span>
+                                </div>
+                            </div>
+                            <div class="jobs-carousel-item">
+                                <div class="jobs-item-top d-flex justify-content-between">
+                                    <div>
+                                        <p class="mb-2 jobs-team-name">Klean n Clin Studios</p>
+                                        <p class="mb-3 job-position">Senior Programmer</p>
+                                    </div>
+                                    <div><img src="./img/jobs-item-img.png" alt=""></div>
+                                </div>
+                                <p class="mb-4 job-salary">$14,000 - $25,000</p>
+                                <p class="job-statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                <div class="jobs-item-bottom d-flex justify-content-between align-items-center">
+                                    <div>PART TIME</div>
+                                    <span>Manchester, England</span>
+                                </div>
+                            </div>
+                            <div class="jobs-carousel-item">
+                                <div class="jobs-item-top d-flex justify-content-between">
+                                    <div>
+                                        <p class="mb-2 jobs-team-name">Maximoz Team</p>
+                                        <p class="mb-3 job-position">Intern UX Designer</p>
+                                    </div>
+                                    <div><img src="./img/jobs-item-img.png" alt=""></div>
+                                </div>
+                                <p class="mb-4 job-salary">$14,000 - $25,000</p>
+                                <p class="job-statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                <div class="jobs-item-bottom d-flex justify-content-between align-items-center">
+                                    <div>FULTIME</div>
+                                    <span>London, England</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+            <section class="hp-main-bottom">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3>Featured Companies</h3>
+                    <button type="button">
+                        <span>View More</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_8_203)">
+                            <path d="M23.5607 10.9394L18.2461 5.62482C17.9532 5.3319 17.5693 5.18546 17.1854 5.18546C16.8015 5.18546 16.4176 5.3319 16.1247 5.62482C15.539 6.21062 15.539 7.16035 16.1247 7.74615L18.8787 10.5001L1.5 10.5001C0.671578 10.5001 0 11.1716 0 12.0001C0 12.8285 0.671578 13.5001 1.5 13.5001L18.8787 13.5001L16.1247 16.254C15.539 16.8398 15.539 17.7895 16.1247 18.3753C16.7106 18.9611 17.6602 18.9611 18.2461 18.3753L23.5607 13.0607C24.1464 12.4749 24.1464 11.5252 23.5607 10.9394Z" fill="#40189D"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_8_203">
+                            <rect width="24" height="24" fill="white" transform="matrix(1 0 0 -1 0 24)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
+                <div class="vacancy-items-bottom">
+                    <div class="vacancy-item-bottom d-flex justify-content-between">
+                        <div><img src="./img/vacancies-item-img.png" alt=""></div>
+                        <article>
+                            <h4 class="mb-2">Herman-Carter</h4>
+                            <p class="mb-0">21 Vacancy</p>
+                        </article>
+                    </div>
+                    <div class="vacancy-item-bottom d-flex justify-content-between">
+                        <div><img src="./img/vacancies-item-img.png" alt=""></div>
+                        <article>
+                            <h4 class="mb-2">Funk Inc.</h4>
+                            <p class="mb-0">21 Vacancy</p>
+                        </article>
+                    </div>
+                    <div class="vacancy-item-bottom d-flex justify-content-between">
+                        <div><img src="./img/vacancies-item-img.png" alt=""></div>
+                        <article>
+                            <h4 class="mb-2">Williamson Inc</h4>
+                            <p class="mb-0">21 Vacancy</p>
+                        </article>
+                    </div>
+                    <div class="vacancy-item-bottom d-flex justify-content-between">
+                        <div><img src="./img/vacancies-item-img.png" alt=""></div>
+                        <article>
+                            <h4 class="mb-2">Donnelly Ltd.</h4>
+                            <p class="mb-0">21 Vacancy</p>
+                        </article>
+                    </div>
+                    <div class="vacancy-item-bottom d-flex justify-content-between">
+                        <div><img src="./img/vacancies-item-img.png" alt=""></div>
+                        <article>
+                            <h4 class="mb-2">Herman-Carter</h4>
+                            <p class="mb-0">21 Vacancy</p>
+                        </article>
+                    </div>
+                    <div class="vacancy-item-bottom d-flex justify-content-between">
+                        <div><img src="./img/vacancies-item-img.png" alt=""></div>
+                        <article>
+                            <h4 class="mb-2">Funk Inc.</h4>
+                            <p class="mb-0">21 Vacancy</p>
+                        </article>
+                    </div>
+                    <div class="vacancy-item-bottom d-flex justify-content-between">
+                        <div><img src="./img/vacancies-item-img.png" alt=""></div>
+                        <article>
+                            <h4 class="mb-2">Williamson Inc</h4>
+                            <p class="mb-0">21 Vacancy</p>
+                        </article>
+                    </div>
+                    <div class="vacancy-item-bottom d-flex justify-content-between">
+                        <div><img src="./img/vacancies-item-img.png" alt=""></div>
+                        <article>
+                            <h4 class="mb-2">Donnelly Ltd.</h4>
+                            <p class="mb-0">21 Vacancy</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <main class="hp-main search-job-page">
+            <nav class="d-flex justify-content-between align-items-center">
+                <div class="sidebar-btn d-flex align-items-center">
+                    <button type="button" class="sidebar-toggle">
+                        <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="toggleBtn">
+                            <path d="M22.5 18H1.50001C0.671548 18 0 17.3284 0 16.5C0 15.6716 0.671548 15 1.50001 15H22.5C23.3285 15 24.0001 15.6716 24.0001 16.5C24 17.3284 23.3285 18 22.5 18Z" fill="black"/>
+                            <path d="M27.5 10.5H6.50001C5.67155 10.5 5 9.82848 5 9.00007C5 8.17166 5.67155 7.50006 6.50001 7.50006H27.5C28.3285 7.50006 29.0001 8.17161 29.0001 9.00007C29.0001 9.82853 28.3285 10.5 27.5 10.5Z" fill="black"/>
+                            <path d="M22.5 3.00002H1.50001C0.671548 3.00002 0 2.32847 0 1.50001C0 0.671548 0.671548 0 1.50001 0H22.5C23.3285 0 24.0001 0.671548 24.0001 1.50001C24.0001 2.32847 23.3285 3.00002 22.5 3.00002Z" fill="black"/>
+                        </svg>
+                        <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="toggleBtn-active">
+                            <path d="M22.5 18H1.50001C0.671548 18 0 17.3284 0 16.5C0 15.6716 0.671548 15 1.50001 15H22.5C23.3285 15 24.0001 15.6716 24.0001 16.5C24 17.3284 23.3285 18 22.5 18Z" fill="black"/>
+                            <path d="M27.5 10.5H6.50001C5.67155 10.5 5 9.82848 5 9.00007C5 8.17166 5.67155 7.50006 6.50001 7.50006H27.5C28.3285 7.50006 29.0001 8.17161 29.0001 9.00007C29.0001 9.82853 28.3285 10.5 27.5 10.5Z" fill="black"/>
+                            <path d="M22.5 3.00002H1.50001C0.671548 3.00002 0 2.32847 0 1.50001C0 0.671548 0.671548 0 1.50001 0H22.5C23.3285 0 24.0001 0.671548 24.0001 1.50001C24.0001 2.32847 23.3285 3.00002 22.5 3.00002Z" fill="black"/>
+                        </svg>
+                    </button>
+                    <span>Dashboard</span>
+                    <div class="nav-profile d-flex align-items-center over-md-invisible">
+                        <img src="img/profilePictureNav.png" alt="">
+                        <span>
+                            <p class="mb-1">Oda Dink</p>
+                            <p class="mb-0">Super Admin</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="nav-right d-flex align-items-center">
+                    <form action="" class="d-flex align-items-center justify-content-between mb-0">
+                        <input type="search" class="nav-search " placeholder="Search something here...">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_491)">
+                            <path d="M15.7544 24.4961C8.9914 24.4961 3.50885 19.0136 3.50885 12.2506C3.50885 5.4875 8.99134 0.00506592 15.7544 0.00506592C22.5175 0.00506592 28 5.48756 28 12.2506C28 19.0137 22.5174 24.4961 15.7544 24.4961ZM15.7544 3.50381C10.9237 3.50381 7.0076 7.41987 7.0076 12.2506C7.0076 17.0814 10.9237 20.9974 15.7544 20.9974C20.5852 20.9974 24.5012 17.0814 24.5012 12.2506C24.5012 7.41987 20.5851 3.50381 15.7544 3.50381Z" fill="#BFBFBF"/>
+                            <path d="M1.75948 27.9948C1.29448 27.9976 0.847561 27.815 0.517439 27.4875C-0.168551 26.8071 -0.173073 25.6995 0.507309 25.0136C0.510686 25.0102 0.514062 25.0068 0.517439 25.0034L7.09503 18.4258C7.80514 17.7398 8.9369 17.7594 9.62289 18.4696C10.3089 19.1797 10.2893 20.3114 9.57918 20.9974L3.00152 27.4875C2.6714 27.815 2.22449 27.9976 1.75948 27.9948Z" fill="#BFBFBF"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_491">
+                            <rect width="28" height="28" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </form>
+                    <div class="message-box"><img src="./img/messageBox.svg" alt=""></div>
+                    <div class="notification-box"><img src="./img/notificationBox.svg" alt=""></div>
+                    <div class="nav-profile d-flex align-items-center below-md-invisible">
+                        <img src="img/profilePictureNav.png" alt="">
+                        <span>
+                            <p class="mb-1">Oda Dink</p>
+                            <p class="mb-0">Super Admin</p>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+            <section class="sj-main">
+                <div class="search-through-writing d-grid">
+                    <div class="custom-dropdown-menu sj-dropdown-style">
+                        <div>
+                            <button type="button" class="sj-dropdown-btn d-flex align-items-center">
+                                <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 0C6.93398 0 2.8125 4.12148 2.8125 9.1875C2.8125 10.8091 3.24094 12.4034 4.05145 13.7979C4.24041 14.123 4.45162 14.4398 4.67934 14.7396L11.6008 24H12.3991L19.3207 14.7397C19.5483 14.4398 19.7595 14.1231 19.9485 13.7979C20.7591 12.4034 21.1875 10.8091 21.1875 9.1875C21.1875 4.12148 17.066 0 12 0ZM12 12.2344C10.32 12.2344 8.95312 10.8675 8.95312 9.1875C8.95312 7.50745 10.32 6.14062 12 6.14062C13.68 6.14062 15.0469 7.50745 15.0469 9.1875C15.0469 10.8675 13.68 12.2344 12 12.2344Z" fill="#40189D"/>
+                                </svg>
+                                <span class="dropdown-btn-showing">Around You</span>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 8L9 16L17 8" stroke="#CECECE" stroke-width="2"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-elements">
+                                <ul class="">
+                                    <li class="dropdown-options">Around You</li>
+                                    <li class="dropdown-options">Lowest Price</li>
+                                    <li class="dropdown-options">Highest Price</li>
+                                    <li class="dropdown-options">In My City</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sj-main-search d-flex align-items-center">
+                        <input type="search" placeholder="Search by Title, Company or any jobs keyword...">
+                        <button class="sj-filter-btn d-flex align-items-center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 6H14C14 6.53043 14.2107 7.03914 14.5858 7.41421C14.9609 7.78929 15.4696 8 16 8H18C18.5304 8 19.0391 7.78929 19.4142 7.41421C19.7893 7.03914 20 6.53043 20 6H21C21.2652 6 21.5196 5.89464 21.7071 5.70711C21.8946 5.51957 22 5.26522 22 5C22 4.73478 21.8946 4.48043 21.7071 4.29289C21.5196 4.10536 21.2652 4 21 4H20C20 3.46957 19.7893 2.96086 19.4142 2.58579C19.0391 2.21071 18.5304 2 18 2H16C15.4696 2 14.9609 2.21071 14.5858 2.58579C14.2107 2.96086 14 3.46957 14 4H3C2.73478 4 2.48043 4.10536 2.29289 4.29289C2.10536 4.48043 2 4.73478 2 5C2 5.26522 2.10536 5.51957 2.29289 5.70711C2.48043 5.89464 2.73478 6 3 6ZM16 4H18V5V6H16V4ZM21 11H12C12 10.4696 11.7893 9.96086 11.4142 9.58579C11.0391 9.21071 10.5304 9 10 9H8C7.46957 9 6.96086 9.21071 6.58579 9.58579C6.21071 9.96086 6 10.4696 6 11H3C2.73478 11 2.48043 11.1054 2.29289 11.2929C2.10536 11.4804 2 11.7348 2 12C2 12.2652 2.10536 12.5196 2.29289 12.7071C2.48043 12.8946 2.73478 13 3 13H6C6 13.5304 6.21071 14.0391 6.58579 14.4142C6.96086 14.7893 7.46957 15 8 15H10C10.5304 15 11.0391 14.7893 11.4142 14.4142C11.7893 14.0391 12 13.5304 12 13H21C21.2652 13 21.5196 12.8946 21.7071 12.7071C21.8946 12.5196 22 12.2652 22 12C22 11.7348 21.8946 11.4804 21.7071 11.2929C21.5196 11.1054 21.2652 11 21 11ZM8 13V11H10V12V13H8ZM21 18H18C18 17.4696 17.7893 16.9609 17.4142 16.5858C17.0391 16.2107 16.5304 16 16 16H14C13.4696 16 12.9609 16.2107 12.5858 16.5858C12.2107 16.9609 12 17.4696 12 18H3C2.73478 18 2.48043 18.1054 2.29289 18.2929C2.10536 18.4804 2 18.7348 2 19C2 19.2652 2.10536 19.5196 2.29289 19.7071C2.48043 19.8946 2.73478 20 3 20H12C12 20.5304 12.2107 21.0391 12.5858 21.4142C12.9609 21.7893 13.4696 22 14 22H16C16.5304 22 17.0391 21.7893 17.4142 21.4142C17.7893 21.0391 18 20.5304 18 20H21C21.2652 20 21.5196 19.8946 21.7071 19.7071C21.8946 19.5196 22 19.2652 22 19C22 18.7348 21.8946 18.4804 21.7071 18.2929C21.5196 18.1054 21.2652 18 21 18ZM14 20V18H16V19V20H14Z" fill="#40189D"/>
+                            </svg>
+                            <span>FILTER</span>
+                        </button>
+                        <button class="sj-search-btn d-flex align-items-center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_9_3024)">
+                                <path d="M13.5038 20.9967C7.7069 20.9967 3.00757 16.2974 3.00757 10.5005C3.00757 4.70356 7.70685 0.0043335 13.5038 0.0043335C19.3007 0.0043335 24 4.70361 24 10.5005C24 16.2974 19.3006 20.9967 13.5038 20.9967ZM13.5038 3.00326C9.36312 3.00326 6.0065 6.35988 6.0065 10.5005C6.0065 14.6412 9.36312 17.9978 13.5038 17.9978C17.6444 17.9978 21.001 14.6412 21.001 10.5005C21.001 6.35988 17.6444 3.00326 13.5038 3.00326Z" fill="white"/>
+                                <path d="M1.50815 23.9956C1.10958 23.9979 0.726507 23.8414 0.443545 23.5607C-0.144446 22.9775 -0.148323 22.0282 0.434863 21.4402C0.437757 21.4373 0.440651 21.4344 0.443545 21.4315L6.08148 15.7936C6.69015 15.2056 7.66023 15.2224 8.24822 15.8311C8.83621 16.4397 8.81942 17.4098 8.21075 17.9978L2.57276 23.5607C2.2898 23.8414 1.90673 23.9979 1.50815 23.9956Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_9_3024">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <span>FIND</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="sj-suggestions">
+                    <span>Suggestions</span>
+                    <div class="suggestion-links">
+                        <div class="suggestion-links-item">
+                            <a href="">Your Skill</a>
+                        </div>
+                        <div class="suggestion-links-item">
+                            <a href="">Programmer</a>
+                        </div>
+                        <div class="suggestion-links-item">
+                            <a href="">Software Engineer</a>
+                        </div>
+                        <div class="suggestion-links-item">
+                            <a href="">Photographer</a>
+                        </div>
+                        <div class="suggestion-links-item">
+                            <a href="">Digital Marketing</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="empty-div"></div>
+
+
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/jQuery/jQuery.uncompressed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.1/chart.min.js" integrity="sha512-tQYZBKe34uzoeOjY9jr3MX7R/mo7n25vnqbnrkskGr4D6YOoPYSpyafUAzQVjV6xAozAqUFIEFsCO4z8mnVBXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/homepage.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@import 'sass/dashboard-page/homepage';
+@import 'sass/responsive/responsive';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// *{
+//     margin: 0;
+//     padding: 0;
+//     outline: 0;
+//     appearance: none;
+//     border: 0;
+//     text-decoration: none;
+//     list-style: none;
+//     box-sizing: border-box;
+// }
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+// .container-sp{
+//     display: grid;
+//     grid-template-columns: 300px auto;
+// }
+
+.grid-container{
+    display: grid;
+    // grid-template-columns: 18% 82%;
+    height: 100%;
+}
